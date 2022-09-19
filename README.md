@@ -3,9 +3,11 @@
 ## Sprendžiamo uždavinio aprašymas
 ### Sistemos paskirtis
 Žymiausių istorijos įvykių sistema yra skirta kaupti žymiausius istorinius įvykius ir su jais susijusias asmenybes. Šie įvykiai, atitinkamai pagal vietą ir šimtmetį, bus pavaizduoti kaip taškai ant pasaulio žemėlapio, su kuriuo vartotojas galės sąveikauti. Po įvykiais ir asmenybėmis vartotojams bus galimybė kurti diskusijas, kurias moderuos administratoriai. 
+
 Platformą sudaro dvi dalys: internetinė svetainė, kuria naudosis visi sistemos vartotojai ir aplikacijų programavimo sąsaja (angl. Trump. API).
 Neprisiregistravęs vartotojas gali matyti ir skaityti žemėlapyje esančius įvykius ir kitų registruotų vartotojų diskusijas, tačiau pats komentuoti negali. Registruoti vartotojai taip pat turi galimybę pridėti naujus įvykius ar asmenybes prie pasaulio žemėlapio, kuriuos patvirtins arba atmes administratoriai. Administratoriai be jau minėtų funkcijų gali moderuoti diskusijas: jas trinti, įspėti bei uždaryti.
-Esybės: žemėlapis  įvykis  asmenybė _arba_ žemėlapis  įvykis  diskusija, _arba_ įvykis  asmenybė  diskusija.
+
+Esybės: žemėlapis <- įvykis <- asmenybė _arba_ žemėlapis <- įvykis <- diskusija, _arba_ įvykis <- asmenybė <- diskusija.
 Galima pridurti, kad diskusijų funkcionalumas nebūtinai bus realizuotas šio semestro metu, o po to galutinėje ataskaitoje pakaks ištrinti visą pasenusią informaciją.
 
 ### Funkciniai reikalavimai
@@ -14,6 +16,7 @@ Neregistruoti vartotojai gali:
 2.	Peržiūrėti žymiausius įvykius bei jų asmenybes;
 3.	Rikiuoti įvykių žemėlapį pagal šimtmečius;
 4.	Prisiregistruoti prie sistemos.
+
 Registruoti vartotojai gali:
 1.	Prisijungti prie sistemos;
 2.	Pridėti:
@@ -28,6 +31,7 @@ Registruoti vartotojai gali:
 4.	Peržiūrėti registruotų vartotojų paskyras;
 5.	Siūlyti žemėlapio redagavimą;
 6.	Atsijungti nuo internetinės aplikacijos.
+
 Administratorius gali:
 1.	Patvirtinti arba atmesti:
   *	Registruotų vartotojų pridėtus įvykius;
