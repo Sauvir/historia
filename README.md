@@ -1,51 +1,70 @@
-# Historia
+# Getting Started with Create React App
 
-## Sprendžiamo uždavinio aprašymas
-### Sistemos paskirtis
-Žymiausių istorijos įvykių sistema yra skirta kaupti žymiausius istorinius įvykius ir su jais susijusias asmenybes. Šie įvykiai, atitinkamai pagal vietą ir šimtmetį, bus pavaizduoti kaip taškai ant pasaulio žemėlapio, su kuriuo vartotojas galės sąveikauti. Po įvykiais ir asmenybėmis vartotojams bus galimybė kurti diskusijas, kurias moderuos administratoriai. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Platformą sudaro dvi dalys: internetinė svetainė, kuria naudosis visi sistemos vartotojai ir aplikacijų programavimo sąsaja (angl. Trump. API).
-Neprisiregistravęs vartotojas gali matyti ir skaityti žemėlapyje esančius įvykius ir kitų registruotų vartotojų diskusijas, tačiau pats komentuoti negali. Registruoti vartotojai taip pat turi galimybę pridėti naujus įvykius ar asmenybes prie pasaulio žemėlapio, kuriuos patvirtins arba atmes administratoriai. Administratoriai be jau minėtų funkcijų gali moderuoti diskusijas: jas trinti, įspėti bei uždaryti.
+## Available Scripts
 
-Esybės: žemėlapis <- įvykis <- asmenybė _arba_ žemėlapis <- įvykis <- diskusija, _arba_ įvykis <- asmenybė <- diskusija.
-Galima pridurti, kad diskusijų funkcionalumas nebūtinai bus realizuotas šio semestro metu, o po to galutinėje ataskaitoje pakaks ištrinti visą pasenusią informaciją.
+In the project directory, you can run:
 
-### Funkciniai reikalavimai
-Neregistruoti vartotojai gali:
-1.	Peržiūrėti žymiausių įvykių žemėlapį;
-2.	Peržiūrėti žymiausius įvykius bei jų asmenybes;
-3.	Rikiuoti įvykių žemėlapį pagal šimtmečius;
-4.	Prisiregistruoti prie sistemos.
+### `npm start`
 
-Registruoti vartotojai gali:
-1.	Prisijungti prie sistemos;
-2.	Pridėti:
-  *	Įvykius prie žemėlapio;
-  *	Asmenybės prie įvykių.
-3.	Sąveikauti su diskusijomis:
-  *	Kurti naujas diskusijas;
-  *	Komentuoti prie egzistuojančių diskusijų;
-  *	Pranešti komentarą;
-  *	Reitinguoti diskusiją;
-  *	Reitinguoti komentarą.
-4.	Peržiūrėti registruotų vartotojų paskyras;
-5.	Siūlyti žemėlapio redagavimą;
-6.	Atsijungti nuo internetinės aplikacijos.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Administratorius gali:
-1.	Patvirtinti arba atmesti:
-  *	Registruotų vartotojų pridėtus įvykius;
-  *	Registruotų vartotojų pridėtas asmenybes.
-2.	Sąveikauti su diskusijomis:
-  *	Uždaryti diskusiją;
-  *	Ištrinti diskusiją;
-  *	Ištrinti komentarą.
-3.	Išmesti registruotą vartotoją;
-4.	Redaguoti žemėlapio informaciją;
-5.	Įspėti registruotą vartotoją
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Sprendžiamo uždavinio aprašymas
-Žymiausių istorijos įvykių sistemos kliento pusė (angl. Front-end) bus kuriama su JavaScript React.js karkasu. Serverio pusei bus naudojama ASP.NET (angl. Back-end). Duombazei bus naudojamas SQL.
+### `npm test`
 
-## Sistemos architektūra
-![Model](https://user-images.githubusercontent.com/53517068/190961764-be958ac0-8193-4780-b342-360e284a0ebf.jpg)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
