@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.trending {
+    width: 100%;
+    position: relative;
+}
+
+.trending .container {
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0rem;
+}
+
+.trending h2 {
+    font-family: 'Josefin Sans';
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.trending .container .content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 4rem 0;
+}
+@media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+}
+
+.trending .card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: rgb(246, 239, 228);
+    box-shadow: 0 3px 10px rgb(0,0,0,.2);
+    padding: 1rem;
+}
+
+.trending img {
+    border-radius: 50px;
+    margin-top: 0rem;
+}
+
+
+.trending .card p {
+    font-family: 'Lucida Sans Regular';
+    color: #787878;
+    font-size: 1.1rem;
+    margin: 12px;
+}
+
+.trending .card span {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.trending .card mapName {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.trending .card mapName:hover {
+    color: rgb(57, 173, 226);
+}
+
+@media screen and (max-width: 940px) {
+    .trending .container {
+        width: 100%;
+    }
+
+    .trending .container .content {
+        grid-template-columns: 1fr;
+    }
+
+    .trending .card {
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+
+.animate-character
+{
+    font-family: 'Josefin Sans';
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(70, 44, 12) 0%,
+    rgb(57, 173, 226) 50%,
+    rgb(251, 177, 30) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-decoration: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s ease-in-out infinite;
+      font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+
+
+
+

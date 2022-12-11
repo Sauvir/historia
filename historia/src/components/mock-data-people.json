@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "firstname": "Date",
+      "lastname": "Masamune",
+      "description": "Date Masamune was a regional ruler of Japan's Azuchi–Momoyama period through early Edo period.",
+      "deathdate": "1636-09-27"
+    },
+    {
+      "id": 2,
+      "firstname": "Napoleon",
+      "lastname": "Bonaparte",
+      "description": "Napoleon Bonaparte was a French military commander and political leader who rose to prominence during the French Revolution and led successful campaigns during the Revolutionary Wars.",
+      "deathdate": "1821-05-05"
+    },
+    {
+      "id": 3,
+      "firstname": "Dwight D.",
+      "lastname": "Eisenhower",
+      "description": "Dwight David Eisenhower was an American military officer and statesman who served as the 34th president of the United States from 1953 to 1961.",
+      "deathdate": "1969-03-28"
+    }
+  ]

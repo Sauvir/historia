@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+.footer {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 3rem 1rem;
+    overflow: hidden;
+    position: absolute;
+}
+
+.footer .container {
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+}
+.socials {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.993);
+    margin: 8px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    font-family: 'Josefin Sans';
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.footer li a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgb(247, 184, 59);
+}
+
+.bottom {
+    text-align: center;
+    padding-top: 3rem;
+    font-style: italic;
+}
+
+.line {
+    margin-bottom: 1rem;
+    background-color: rgb(247, 184, 59);
+}
+
+.t {
+    color: rgb(255, 255, 255);
+    animation-name: titleflip;
+    animation: color-change 4s ease-in-out infinite;
+}
+  
+@keyframes color-change {
+    0% { color: rgb(255, 255, 255); }
+    25% { color: rgb(117, 203, 243); }
+    50% { color: rgb(252, 199, 94); }
+    75% { color: rgb(117, 203, 243); }
+    100% { color: rgb(255, 255, 255); }
+  }
+
+
+
+
+

@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "Siege of Osaka",
+      "description": "The Siege of Osaka was a series of battles undertaken by the Japanese Tokugawa shogunate against the Toyotomi clan, and ending in that clan's destruction.",
+      "date": "1614-11-08"
+    },
+    {
+      "id": 2,
+      "name": "Christmas Island, Kiribati",
+      "description": "Site of the first British thermonuclear detonation.",
+      "date": "1957-11-08"
+    }
+  ]

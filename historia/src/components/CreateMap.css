@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.createmap {
+    margin: 5rem auto;
+    width: 100%;
+    padding-top: 1rem;
+    position: relative;
+    height: 100vh;
+}
+
+.createmap .container {
+    width: 1240px;
+    margin: 2rem auto;
+}
+
+.createmap .text-center {
+    font-family: 'Josefin Sans';
+    color:#fff;	
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -30px 0 70px 0;
+    display: block;
+    text-align: center;
+}
+
+.createmap .btn{
+    font-family: 'Josefin Sans';  
+	background-color:rgb(247, 184, 59);
+	outline: none;
+    border: 0;
+    color: rgb(0, 0, 0);
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.text-right {
+    font-family: 'Lucida Sans Regular';
+    font-size:20px;
+    position: relative;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1.8rem;
+}
+
+.hand {
+    position: relative;
+    margin-left: 2rem;
+    float: right;
+    margin-top: 1.8rem;
+}
+.pencil {
+    position: relative;
+    margin-left: 0.4rem;
+    float: right;
+    margin-top: 1.8rem;
+}
+
+.createmap .hand:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(247, 184, 59);
+}
+
+.createmap .pencil:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(247, 184, 59);
+}
+
+.map-view { 
+    font-family: 'Lucida Sans Regular';
+    transform: translate(0%,-15%);
+    font-size:17px;
+    height: 32vw; 
+    width: 50vw;
+    margin: 0 auto;
+    border: 8px solid rgb(0, 0, 0,0.9);
+    border-bottom-width: 6rem;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,.2);
+}
+
+form td:last-child {
+    justify-content: space-evenly;
+  }
+
+.createmap .button {
+    font-family: 'Lucida Sans Regular';
+    margin: 1rem 0;
+    width: 300px;
+    background-color: rgb(247, 184, 59);
+    border: 1px solid rgb(75, 56, 18);
+    color: #333;
+}
+
+.createmap .btn:hover {
+    background-color: rgb(239, 221, 187);
+}
+
+.button1 {
+    font-family: 'Lucida Sans Regular';
+    margin: 1rem 0.3rem;
+    width: 40px;
+    background-color: rgb(117, 205, 246);
+    border: 1px solid rgb(117, 205, 246);
+    color: #333;
+    border-radius:5px;
+}
+
+.button1:hover {
+    background-color: rgb(88, 174, 214);
+    border: 1px solid rgb(88, 174, 214);
+}
+
+.line {
+    margin-top: 1rem;
+    background-color: rgb(247, 184, 59);
+}
+
+.createmap p:nth-child(1) {
+    font-family: 'Josefin Sans';
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0;
+    animation: fadeIn 3s;
+    text-transform: uppercase;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.createmap .animate:before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+.createmap .animate:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.createmap .animate:before {
+    content: " ";
+    display: block; 
+    margin-bottom: 34rem;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .6s ease;
+  }
+.createmap .box{
+    width: 40%;
+	transform: translate(0%,-40%);
+    background-color: rgba(0, 0, 0, 0.89);
+	padding:50px 80px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 17rem;
+    box-shadow: 0 3px 10px rgb(0,0,0,.2);
+}
+
+.createmap .input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.createmap .input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+	transition: all 0.5s ease-in-out;
+}
+.createmap .input-container input{ 
+  border:0;
+  border-bottom:1px solid rgb(247, 184, 59);
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+.createmap .input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid rgb(255, 255, 255);
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+table {
+    width: 75%;
+    position: relative;
+    margin: 18px auto;
+    padding-top: 0rem;
+  }
+  
+  th,
+  td {
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: rgb(0, 0, 0,0.9);
+    color: white;
+    font-size: 22px;
+    font-family: 'Josefin Sans';
+    font-weight:normal;
+  }
+  
+  td {
+    background-color: rgb(246, 239, 228);
+    font-size: 18px;
+    font-family: 'Lucida Sans Regular';
+  }
+
+  td:hover {
+    background-color: rgb(223, 212, 195);
+  }
+
+  @media screen and (max-width: 940px) {
+    .createmap .container {
+        width: 100%;
+    }
+
+    .createmap .container .content {
+        grid-template-columns: 1fr;
+    }
+}
