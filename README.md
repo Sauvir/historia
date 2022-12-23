@@ -11,25 +11,25 @@ Sistema negalutinai įgyvendinta.
 
 ### Funkciniai reikalavimai
 
-Neregistruoti vartotojai gali:
+Neregistruoti vartotojai gali: <br>
 1.	Peržiūrėti žymiausių įvykių žemėlapius;
 2.	Peržiūrėti žymiausius įvykius bei jų asmenybes;
-3.	Prisiregistruoti;*
-Registruoti vartotojai gali:
+3.	Prisiregistruoti;* <br>
+Registruoti vartotojai gali: <br>
 1.	Prisijungti prie sistemos;*
 2.	Pridėti, redaguoti, trinti:
 a.	Žemėlapius;
 b.	Įvykius;
 c.	Asmenybes.
 3.	Peržiūrėti registruotų vartotojų paskyras;*
-4.	Atsijungti nuo internetinės aplikacijos.*
-Administratorius gali:
+4.	Atsijungti nuo internetinės aplikacijos.* <br>
+Administratorius gali: <br>
 1.	Trinti arba redaguoti:
 a.	Vartotojų pridėtus žemėlapius;
 b.	Vartotojų pridėtus įvykius;
 c.	Vartotojų pridėtas asmenybes.
 2.	Išmesti registruotą vartotoją;*
-3.	Įspėti registruotą vartotoją.*
+3.	Įspėti registruotą vartotoją.* <br>
 *Tai, kas susiję su rolėmis, sistemoje nėra kol kas įgyvendinta.
 
 ## Pasirinktų technologijų aprašymas
@@ -80,33 +80,33 @@ Asmenybės kūrimo puslapio wireframe ir realizacija:
 ### Map
 
 #### GET Map
-Grąžina žemėlapį pagal id.
-Parametrai
-Id – žemėlapio identifikacijos numeris.
-Galimi atsako kodai
+Grąžina žemėlapį pagal id. <br>
+**Parametrai** <br>
+Id – žemėlapio identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/1
-Atsakymas į pavyzdinę užklausą
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/1 <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 3,
     "name": "Most Famous Battlefields During The Edo Period",
     "eventPointerCount": 13,
     "periodStart": "1868-01-01T00:00:00",
     "periodEnd": "1868-01-01T00:00:00"
-}
+} 
 
 #### GET All Maps
-Grąžina visus žemėlapius.
-Galimi atsako kodai
+Grąžina visus žemėlapius. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps
-Atsakymas į pavyzdinę užklausą
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 [
     {
         "id": 3,
@@ -125,13 +125,13 @@ Atsakymas į pavyzdinę užklausą
 ]
 
 #### POST Create Map
-Sukuria naują žemėlapį.
-Galimi atsako kodai
+Sukuria naują žemėlapį. <br>
+**Galimi atsako kodai**
 401 Unauthorized
-201 Created
-Užklausos pavyzdys
-http://localhost:5106/api/maps
-Body
+201 Created <br>
+**Užklausos pavyzdys**
+http://localhost:5106/api/maps <br>
+**Body**
 {
     "name": "Creating an example map",
     "eventPointerCount": "3",
@@ -139,7 +139,7 @@ Body
     "periodEnd": "2022-12-23"
 }
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą**
 {
     "id": 5,
     "name": "Creating an example map",
@@ -149,34 +149,34 @@ Atsakymas į pavyzdinę užklausą
 }
 
 #### DEL Delete Map
-Ištrina žemėlapį pagal id.
-Parametrai
-Id – žemėlapio identifikacijos numeris.
-Galimi atsako kodai
+Ištrina žemėlapį pagal id. <br>
+**Parametrai** <br>
+Id – žemėlapio identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-204 No Content
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/1
-Atsakymas į pavyzdinę užklausą
+204 No Content <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/1 <br>
+**Atsakymas į pavyzdinę užklausą**
 {}
 
 #### PUT Edit Map
-Redaguoja žemėlapį pagal id.
-Parametrai
-Id – žemėlapio identifikacijos numeris.
-Galimi atsako kodai
+Redaguoja žemėlapį pagal id. <br>
+**Parametrai** <br>
+Id – žemėlapio identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3
-Body
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3 <br>
+**Body**
 {
     "eventPointerCount": "7"
 }
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą**
 {
     "id": 3,
     "name": "Most Famous Battlefields During The Edo Period",
@@ -188,16 +188,16 @@ Atsakymas į pavyzdinę užklausą
 ### Event
 
 #### GET Event
-Grąžina specifinio žemėlapio įvykį pagal id.
-Parametrai
-Id – įvykio identifikacijos numeris.
-Galimi atsako kodai
+Grąžina specifinio žemėlapio įvykį pagal id. <br>
+**Parametrai** <br>
+Id – įvykio identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2
-Atsakymas į pavyzdinę užklausą
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events/2 <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 2,
     "name": "Event3",
@@ -206,15 +206,15 @@ Atsakymas į pavyzdinę užklausą
     "mapId": 3
 }
 
-#### GET All Events
-Grąžina visus specifinio žemėlapio įvykius.
-Galimi atsako kodai
+#### GET All Events 
+Grąžina visus specifinio žemėlapio įvykius. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events
-Atsakymas į pavyzdinę užklausą
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 [
     {
         "id": 2,
@@ -226,20 +226,20 @@ Atsakymas į pavyzdinę užklausą
 ]
 
 #### POST Create Event
-Sukuria naują įvykį specifiniam žemėlapiui.
-Galimi atsako kodai
+Sukuria naują įvykį specifiniam žemėlapiui. <br>
+**Galimi atsako kodai** <br>
 401 Unauthorized
-201 Created
-Užklausos pavyzdys
-http://localhost:5106/api/maps/3/events
-Body
+201 Created <br>
+**Užklausos pavyzdys** <br>
+http://localhost:5106/api/maps/3/events <br>
+**Body**
 {
     "name": "Event333",
     "description": "Description333",
     "eventdate": "1733-08-09"
-}
+} <br>
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 3,
     "name": "Event333",
@@ -249,34 +249,34 @@ Atsakymas į pavyzdinę užklausą
 }
 
 #### DEL Delete Event
-Ištrina įvykį iš specifinio žemėlapio pagal id.
-Parametrai
-Id – įvykio identifikacijos numeris.
-Galimi atsako kodai
+Ištrina įvykį iš specifinio žemėlapio pagal id. <br>
+**Parametrai** <br>
+Id – įvykio identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-204 No Content
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/3
-Atsakymas į pavyzdinę užklausą
+204 No Content <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events/3 <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 {}
 
 #### PUT Edit Event
-Redaguoja specifinio žemėlapio įvykį pagal id.
-Parametrai
-Id – įvykio identifikacijos numeris.
-Galimi atsako kodai
+Redaguoja specifinio žemėlapio įvykį pagal id. <br>
+**Parametrai** <br>
+Id – įvykio identifikacijos numeris.<br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2
-Body
+200 OK<br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events/2 <br>
+**Body** <br>
 {
     "description": "Su Sv. Kaledomis!"
-}
+}<br>
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 2,
     "name": "Event3",
@@ -288,16 +288,16 @@ Atsakymas į pavyzdinę užklausą
 ### Person
 
 #### GET Person
-Grąžina specifinio žemėlapio ir specifinio įvykio asmenybę pagal id.
-Parametrai
-Id – asmenybės identifikacijos numeris.
-Galimi atsako kodai
+Grąžina specifinio žemėlapio ir specifinio įvykio asmenybę pagal id. <br>
+**Parametrai** <br>
+Id – asmenybės identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/3
-Atsakymas į pavyzdinę užklausą
+200 OK<br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/3 <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 3,
     "firstName": "Person3",
@@ -306,17 +306,17 @@ Atsakymas į pavyzdinę užklausą
     "deathDate": "1701-07-07T00:00:00",
     "eventId": 2,
     "mapId": 3
-}
+} 
 
 #### GET All People
-Grąžina visas specifinio žemėlapio ir specifinio įvykio asmenybes.
-Galimi atsako kodai
+Grąžina visas specifinio žemėlapio ir specifinio įvykio asmenybes. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2/people
-Atsakymas į pavyzdinę užklausą
+200 OK <br>
+**Užklausos pavyzdys** <br>
+https://historiaapi.azurewebsites.net/api/maps/3/events/2/people <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 [
     {
         "id": 3,
@@ -330,21 +330,21 @@ Atsakymas į pavyzdinę užklausą
 ]
 
 #### POST Create Person
-Sukuria naują asmenybę specifiniam įvykiui ir specifiniam žemėlapiui.
-Galimi atsako kodai
+Sukuria naują asmenybę specifiniam įvykiui ir specifiniam žemėlapiui.<br>
+**Galimi atsako kodai** <br> 
 401 Unauthorized
-201 Created
-Užklausos pavyzdys
-http://localhost:5106/api/maps/3/events/2/people
-Body
+201 Created <br>
+**Užklausos pavyzdys**
+http://localhost:5106/api/maps/3/events/2/people <br>
+**Body** <br>
 {
     "firstname": "Random",
     "lastname": "NotRandom",
     "description": "MaybeRandom",
     "deathdate": "1700-01-01"
-}
+}<br>
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 4,
     "firstName": "Random",
@@ -356,35 +356,35 @@ Atsakymas į pavyzdinę užklausą
 }
 
 #### DEL Delete Event
-Ištrina asmenybę iš specifinio įvykio ir specifinio žemėlapio pagal id.
-Parametrai
-Id – asmenybės identifikacijos numeris.
-Galimi atsako kodai
+Ištrina asmenybę iš specifinio įvykio ir specifinio žemėlapio pagal id. <br>
+**Parametrai** <br>
+Id – asmenybės identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-204 No Content
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/4
-Atsakymas į pavyzdinę užklausą
+204 No Content <br>
+**Užklausos pavyzdys**
+https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/4 <br>
+**Atsakymas į pavyzdinę užklausą** <br>
 {}
 
 #### PUT Edit Person
-Redaguoja specifinio žemėlapio ir specifinio įvykio asmenybę pagal id.
-Parametrai
-Id – asmenybės identifikacijos numeris.
-Galimi atsako kodai
+Redaguoja specifinio žemėlapio ir specifinio įvykio asmenybę pagal id. <br>
+**Parametrai** <br>
+Id – asmenybės identifikacijos numeris. <br>
+**Galimi atsako kodai** <br>
 404 Not Found
 401 Unauthorized
-200 OK
-Užklausos pavyzdys
-https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/3
-Body
+200 OK <br>
+**Užklausos pavyzdys**
+https://historiaapi.azurewebsites.net/api/maps/3/events/2/people/3 <br>
+**Body** <br>
 {
     "description": "AHHHHH",
     "deathDate": "1699-09-20"
-}
+} <br>
 
-Atsakymas į pavyzdinę užklausą
+**Atsakymas į pavyzdinę užklausą** <br>
 {
     "id": 3,
     "firstName": "Person3",
