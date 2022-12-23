@@ -12,24 +12,24 @@ Sistema negalutinai įgyvendinta.
 ### Funkciniai reikalavimai
 
 Neregistruoti vartotojai gali: <br>
-1.	Peržiūrėti žymiausių įvykių žemėlapius;
-2.	Peržiūrėti žymiausius įvykius bei jų asmenybes;
-3.	Prisiregistruoti; <br>
+• Peržiūrėti žymiausių įvykių žemėlapius;
+• Peržiūrėti žymiausius įvykius bei jų asmenybes;
+• Prisiregistruoti; <br>
 Registruoti vartotojai gali: <br>
-1.	Prisijungti prie sistemos;
-2.	Pridėti, redaguoti, trinti:
+• Prisijungti prie sistemos;
+• Pridėti, redaguoti, trinti:
 a.	Žemėlapius;
 b.	Įvykius;
 c.	Asmenybes.
-3.	Peržiūrėti registruotų vartotojų paskyras;
-4.	Atsijungti nuo internetinės aplikacijos. <br>
+• Peržiūrėti registruotų vartotojų paskyras;
+• Atsijungti nuo internetinės aplikacijos. <br>
 Administratorius gali: <br>
-1.	Trinti arba redaguoti:
+• Trinti arba redaguoti:
 a.	Vartotojų pridėtus žemėlapius;
 b.	Vartotojų pridėtus įvykius;
 c.	Vartotojų pridėtas asmenybes.
-2.	Išmesti registruotą vartotoją;
-3.	Įspėti registruotą vartotoją. 
+• Išmesti registruotą vartotoją;
+• Įspėti registruotą vartotoją. 
 
 ## Pasirinktų technologijų aprašymas
 
