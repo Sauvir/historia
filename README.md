@@ -3,10 +3,10 @@
 ## Sprendžiamo uždavinio aprašymas
 ### Sistemos paskirtis
 
-Žymiausių istorijos įvykių sistema yra skirta kaupti žymiausius istorinius įvykius ir su jais susijusias asmenybes. Šie įvykiai, atitinkamai pagal vietą ir šimtmetį, bus pavaizduoti kaip taškai ant sukurto pasaulio žemėlapio, su kuriuo vartotojas galės sąveikauti. 
-Platformą sudaro dvi dalys: internetinė svetainė, kuria naudosis visi sistemos vartotojai ir aplikacijų programavimo sąsaja (angl. Trump. API).
-Neprisiregistravęs vartotojas gali matyti žemėlapius ir skaityti įvykius bei asmenybes. Registruoti vartotojai turi galimybę pridėti naujus įvykius ar asmenybes prie savo žemėlapio. Administratoriai be jau minėtų funkcijų gali trinti, redaguoti žemėlapius, įvykius, asmenybes.
-Esybės: žemėlapis <- įvykis <- asmenybė.
+Žymiausių istorijos įvykių sistema yra skirta kaupti žymiausius istorinius įvykius ir su jais susijusias asmenybes. Šie įvykiai, atitinkamai pagal vietą ir šimtmetį, bus pavaizduoti kaip taškai ant sukurto pasaulio žemėlapio, su kuriuo vartotojas galės sąveikauti. <br> 
+Platformą sudaro dvi dalys: internetinė svetainė, kuria naudosis visi sistemos vartotojai ir aplikacijų programavimo sąsaja (angl. Trump. API). <br>
+Neprisiregistravęs vartotojas gali matyti žemėlapius ir skaityti įvykius bei asmenybes. Registruoti vartotojai turi galimybę pridėti naujus įvykius ar asmenybes prie savo žemėlapio. Administratoriai be jau minėtų funkcijų gali trinti, redaguoti žemėlapius, įvykius, asmenybes. <br>
+Esybės: žemėlapis <- įvykis <- asmenybė. <br>
 Sistema negalutinai įgyvendinta.
 
 ### Funkciniai reikalavimai
